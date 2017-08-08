@@ -1,4 +1,5 @@
 (function(angular){
+    // 首页模块  使用图片代替
     var app = angular.module("home_page",["ngRoute"]);
     app.config(["$routeProvider",function($routeProvider) {
         $routeProvider.when("/home_page?",{
