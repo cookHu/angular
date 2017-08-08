@@ -31,7 +31,7 @@
 app.controller("detailsController", ["$scope", "myser", "$routeParams", function ($scope, myser, $routeParams) {
     $scope.data = {};
     myser.jsonp(
-        "http://api.douban.com/v2/movie/subject/" + $routeParams.id,
+        "https://api.douban.com/v2/movie/subject/" + $routeParams.id,
         {},
         function (data) {
             $scope.data = data;
