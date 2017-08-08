@@ -1,4 +1,5 @@
 (function (angular) {
+    // 电影列表模块
     var app = angular.module("movieList", ["ngRoute", "jsonpService"]);
     app.config(["$routeProvider", function ($routeProvider) {
         $routeProvider.when("/:movieList/:id?", {
