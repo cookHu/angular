@@ -41,7 +41,7 @@
         $scope.hoPage = ($routeParams.id || "1") - 0;
         $scope.hovePage = ($scope.hoPage - 1) * $scope.nums;
         myser.jsonp(
-            "http://api.douban.com/v2/movie/" + $routeParams.movieList,
+            "https://api.douban.com/v2/movie/" + $routeParams.movieList,
             { start: $scope.hovePage, count: $scope.nums, q: $routeParams.q },
             function (data) {
                 $scope.loading = false;
